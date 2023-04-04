@@ -1,5 +1,4 @@
-// Lab 6 inclass.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Lab 6 inclass.cpp : This file contains code to stack implementation using an array and a linkedList.
 
 #include <iostream>
 #include <chrono>
@@ -8,6 +7,8 @@ using namespace std;
 using namespace chrono;
 
 
+// code to implement stack using a array
+// ARRAY_SIZE is set to 10 and it can be changed accordingly.
 class Array_Stack {
 private:
     const static int ARRAY_SIZE = 10;
@@ -81,6 +82,8 @@ public:
         next = nullptr;
     }
 };
+
+// Stack implementation using LinkedList
 class LinkedList_Stack {
 private:
     Node* top;
